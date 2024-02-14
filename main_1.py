@@ -31,7 +31,7 @@ for i in file:
     code = name.split("-")[0][-1] #  код корабля 
 
     if "V" == code:
-        print(f"<{name}> - (<{coord_x}>), <{coord_y}>)")
+        print(f"{name} - ({coord_x}, {coord_y})")
 
     #print(f"{name}*{planet}*{coord_x} {coord_y}*{d_x} {d_y}")
 
