@@ -19,7 +19,7 @@ file = open('space.txt').readlines()
 for i in file:
     i = i.split("*") # массив с параметрами коробля 
     name = i[0] # Код корабля-номер корабля
-    planet = [1] # название родной планеты корабля
+    planet = i[1] # название родной планеты корабля
     coord_x = int(i[2].split(" ")[0]) # x coord_place
     coord_y = int(i[2].split(" ")[1]) # y coord_place
     d_x = int(i[3].split(" ")[0]) # x direction
@@ -33,6 +33,6 @@ for i in file:
     if "V" == code:
         print(f"{name} - ({coord_x}, {coord_y})")
 
-    #print(f"{name}*{planet}*{coord_x} {coord_y}*{d_x} {d_y}")
-
+    # print(f"{name}*{planet}*{coord_x} {coord_y}*{d_x} {d_y}")
+    # ShipName*planet*coord_place*direction
     
